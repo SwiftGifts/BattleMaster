@@ -47,7 +47,7 @@ public class CharacterSheet
     
     public void Growlevel(){
         this.charlevel += 1;
-        System.out.println ("You've reached level " + this.charlevel + "!");
+        System.out.println ("You've reached level " + this.charlevel + "!!!");
     }
     
     public void charhistory(String x){
