@@ -75,7 +75,20 @@ public class MainMenu
             name.charcha = 14;}
         pd("Your experience gained as a " + name.Getcharhistory() + " will serve you well");
         pd("Story here. Grew up doing the thing you said before.");
+        Townsquare(name);
         
+        
+    }
+    
+    public void Townsquare(CharacterSheet name){
+    
+    pd("What would you like to do?");
+    p("1) Go exploring");
+    p("2) Go to the market district");
+    p("3) Go home");
+    p("4) Take a nap");
+    Makechoice(4);
+    Combat firstfight = new Combat(name , "Spider");
     }
     
     public void Makechoice(int options){

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=charname\ monname
+comment0.target=Combat(CharacterSheet,\ java.lang.String)
+comment1.params=monster\ character
+comment1.target=void\ Combatstats(MonsterSheet,\ CharacterSheet)
+numComments=2

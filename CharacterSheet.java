@@ -57,4 +57,16 @@ public class CharacterSheet
     public String Getcharhistory(){
         return this.charhistory;
     }
+    
+    public void Showcharstats(){
+        System.out.println ("");
+        System.out.println (Getname());
+        System.out.println ("");
+        System.out.println ("Strength: " + charstr); 
+        System.out.println ("Constitution: " + charcon); 
+        System.out.println ("Dexterity: " + chardex); 
+        System.out.println ("Wisdom: " + charwis); 
+        System.out.println ("Intelligence: " + charint); 
+        System.out.println ("Charisma: " + charcha); 
+    }
 }
