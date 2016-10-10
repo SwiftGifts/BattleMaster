@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=name\ age
+comment0.target=CharacterSheet(java.lang.String,\ int)
+comment1.params=
+comment1.target=int\ Getage()
+comment2.params=
+comment2.target=java.lang.String\ Getname()
+comment3.params=
+comment3.target=int\ Gethealth()
+comment4.params=
+comment4.target=int\ Getmana()
+comment5.params=
+comment5.target=int\ Getexperience()
+comment6.params=
+comment6.target=void\ Growlevel()
+comment7.params=x
+comment7.target=void\ charhistory(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ Getcharhistory()
+numComments=9

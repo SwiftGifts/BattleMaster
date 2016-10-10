@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MainMenu()
+comment1.params=name
+comment1.target=void\ Firststeps(CharacterSheet)
+comment2.params=options
+comment2.target=void\ Makechoice(int)
+comment3.params=x
+comment3.target=void\ p(java.lang.String)
+comment4.params=x
+comment4.target=void\ pd(java.lang.String)
+comment5.params=x
+comment5.target=void\ pause(int)
+numComments=6
