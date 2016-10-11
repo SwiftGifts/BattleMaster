@@ -15,6 +15,8 @@ public class Combat
         
         Combatmenu();
         
+        
+        
     }
 
     

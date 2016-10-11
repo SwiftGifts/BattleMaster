@@ -103,7 +103,10 @@ public class MainMenu
         p("Please select a valid choice");
         Makechoice(options);
     }
-    
+        if (choice <= 0 || choice > options){
+            p("Please select a valid choice");
+        Makechoice(options);
+    }
     }
     //Prints text without delay
     public void p(String x){
