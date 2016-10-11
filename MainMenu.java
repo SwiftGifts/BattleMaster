@@ -26,7 +26,7 @@ public class MainMenu
         System.out.println("Your name is " + name.Getname() + " and you are " + name.Getage() + " years old correct?");
         p("1)Yes");
         p("2)No");
-        Makechoice(2);
+        choice = Makechoice(2);
         if(choice == 1){
         pause(3);
         p("");
@@ -47,7 +47,7 @@ public class MainMenu
         p("1) I helped my father grow crops");
         p("2) I worked with my mother to make clothing and crafts");
         p("3) I bartered and helped sell good come market day");
-        Makechoice(3);
+        choice = Makechoice(3);
         
         if (choice == 1){
             name.charhistory("farmer");
@@ -87,29 +87,32 @@ public class MainMenu
     p("2) Go to the market district");
     p("3) Go home");
     p("4) Take a nap");
-    Makechoice(4);
+    choice = Makechoice(4);
     Combat firstfight = new Combat(name , "Spider");
     }
     
-    public void Makechoice(int options){
+    static int Makechoice(int options){
         Scanner sc = new Scanner(System.in);
         System.out.println("Choose...");
+        int choice = 0;
        try
        {
-           this.choice = sc.nextInt();
+           choice = sc.nextInt();
         }
         catch(InputMismatchException exception)
         {
         p("Please select a valid choice");
         Makechoice(options);
-    }
-        if (choice <= 0 || choice > options){
+       }
+       if (choice <= 0 || choice > options){
             p("Please select a valid choice");
         Makechoice(options);
-    }
+       }
+       return choice;
+    
     }
     //Prints text without delay
-    public void p(String x){
+    static void p(String x){
         System.out.println(x);
     }
     //Prints text but with the delay specified 

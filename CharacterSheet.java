@@ -69,4 +69,8 @@ public class CharacterSheet
         System.out.println ("Intelligence: " + charint); 
         System.out.println ("Charisma: " + charcha); 
     }
+    
+    public int Attack(){
+        return ((charstr - 10)/ 2);
+    }
 }

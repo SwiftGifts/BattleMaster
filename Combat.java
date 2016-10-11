@@ -6,6 +6,7 @@ public class Combat
     private int x;
     CharacterSheet character;
     MonsterSheet monster;
+    int choice;
 
     public Combat(CharacterSheet charname, String monname)
     {
@@ -15,8 +16,12 @@ public class Combat
         
         Combatmenu();
         
-        
-        
+        choice = MainMenu.Makechoice(3);
+        if (choice == 1){
+            int dmg = character.Attack();
+            monster.monhealth -= dmg;
+            System.out.println(dmg + " Damage done!");
+        }
     }
 
     
