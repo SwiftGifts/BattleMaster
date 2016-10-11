@@ -22,7 +22,8 @@ public class MonsterSheet
             mondex = 10;
             monwis = 10;
             monint = 10;
-            moncha = 10;}
+            moncha = 10;
+            monhealth = 10;}
         
     }
     
