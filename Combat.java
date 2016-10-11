@@ -1,22 +1,38 @@
-
+import java.util.*;
 
 public class Combat
 {
     // instance variables - replace the example below with your own
     private int x;
-    String character;
-    String monster;
+    CharacterSheet character;
+    MonsterSheet monster;
 
     public Combat(CharacterSheet charname, String monname)
     {
-        MonsterSheet monster = new MonsterSheet(monname);
+        Scanner scan = new Scanner(System.in);
+        monster = new MonsterSheet(monname);
+        character = charname;
         
-        Combatstats(monster , charname);
+        Combatmenu();
+        
     }
 
     
     public void Combatstats(MonsterSheet monster , CharacterSheet character){
         character.Showcharstats();
         monster.Showmonstats();
+    }
+    
+    public void Combatmenu(){
+        
+        System.out.println("Current foe: " + monster.Getname());
+        System.out.println("");
+        System.out.println(character.Getname());
+        System.out.println("Health: " + character.Gethealth());
+        System.out.println("Mana: " + character.Getmana());
+        System.out.println("1) Attack");
+        System.out.println("2) Guard");
+        System.out.println("3) Flee");
+        
     }
 }

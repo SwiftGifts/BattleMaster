@@ -5,7 +5,6 @@ public class MonsterSheet
     int monlevel;
     int monhealth;
     int monmana;
-    
     int monstr;
     int moncon;
     int mondex;
